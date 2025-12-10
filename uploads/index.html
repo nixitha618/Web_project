@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>video Recorder</title>
+        <link rel="stylesheet" href="style.css">
+       <!--<link rel="icon" href="/favicon.ico" type="image/x-icon">-->
+
+        <link rel="icon" href="data:,">
+
+        </head>
+
+
+    
+    <body>
+        <div class="container">
+            <h1>Video Testimonial Recorder <span id="recordIndicator" class="recording-indicator" style="display:none;"></span></h1>
+       
+            <div class="video-container">
+                <video id="preview" autoplay></video>
+            </div>
+            <div id="timer" class="timer">00:00</div>
+
+            <div class="buttons">
+                <button id="start" class="btn btn-start">Start Recording</button>
+                <button id="stop" class="btn btn-stop" disabled>stop and upload</button>
+            </div>
+            <div class="success-message" id="successMessage" style="display: none;">
+                ✅ Your video has been uploaded successfully!
+            </div>
+            
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>
